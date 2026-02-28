@@ -1,13 +1,33 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import Header from "@/components/landing/Header";
+import Hero from "@/components/landing/Hero";
+import Authority from "@/components/landing/Authority";
+import PainPoints from "@/components/landing/PainPoints";
+import Solution from "@/components/landing/Solution";
+import About from "@/components/landing/About";
+import HowItWorks from "@/components/landing/HowItWorks";
+import FinalCTA from "@/components/landing/FinalCTA";
+import WhatsAppButton from "@/components/landing/WhatsAppButton";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
-    </div>
+    <>
+      <Header />
+      <main>
+        <Hero />
+        <Authority />
+        <PainPoints />
+        <Solution />
+        <About />
+        <HowItWorks />
+        <FinalCTA />
+      </main>
+      <footer className="bg-background border-t border-border py-8 px-6 text-center">
+        <p className="text-sm text-muted-foreground">
+          © {new Date().getFullYear()} ECS Psicologia — Todos os direitos reservados
+        </p>
+      </footer>
+      <WhatsAppButton />
+    </>
   );
 };
 
