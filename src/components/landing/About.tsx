@@ -1,6 +1,6 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import { Award } from "lucide-react";
+import edinaldoPhoto from "@/assets/edinaldo-castro.png";
 
 const specialties = [
   "Gestalt-terapia",
@@ -35,16 +35,13 @@ const About = () => {
             className="flex justify-center"
           >
             <div className="w-72 h-96 md:w-80 md:h-[28rem] rounded-2xl bg-muted overflow-hidden shadow-lg">
-              {/* Placeholder - awaiting user's uploaded photo */}
-              <div className="w-full h-full flex items-center justify-center bg-accent">
-                <div className="text-center p-6">
-                  <div className="w-20 h-20 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
-                    <Award className="w-10 h-10 text-primary" />
-                  </div>
-                  <p className="font-heading text-2xl font-semibold text-sage-dark">Edinaldo Castro</p>
-                  <p className="text-sm text-muted-foreground mt-2">Psicólogo Clínico</p>
-                </div>
-              </div>
+              <img
+                src={edinaldoPhoto}
+                alt="Edinaldo Castro - Psicólogo Clínico"
+                className="w-full h-full object-cover object-top"
+                style={{ imageRendering: "auto", filter: "contrast(1.05) sharpen(1)" }}
+                loading="lazy"
+              />
             </div>
           </motion.div>
 
