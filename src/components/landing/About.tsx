@@ -1,6 +1,6 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import { Award } from "lucide-react";
+import edinaldoPhoto from "@/assets/edinaldo-castro.png";
 
 const specialties = [
   "Gestalt-terapia",
