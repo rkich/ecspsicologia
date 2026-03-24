@@ -39,7 +39,7 @@ const About = () => {
                 src={edinaldoPhoto}
                 alt="Edinaldo Castro - Psicólogo Clínico"
                 className="w-full h-full object-cover object-top"
-                style={{ imageRendering: "auto", filter: "contrast(1.05) sharpen(1)" }}
+                style={{ imageRendering: "auto", filter: "contrast(1.05)" }}
                 loading="lazy"
               />
             </div>
