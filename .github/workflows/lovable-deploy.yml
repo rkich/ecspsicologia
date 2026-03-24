@@ -23,7 +23,7 @@ jobs:
           bun-version: latest
       
       - name: "Instalar Dependencias"
-        run: bun install --frozen-lockfile
+        run: bun install
       
       - name: "Rodar Build"
         run: bun run build
