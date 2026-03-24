@@ -32,7 +32,7 @@ const Hero = () => {
           className="text-body-lg max-w-2xl mx-auto mb-8"
         >
           Terapia on-line em português com mais de 20 anos de experiência clínica.
-          Tratamento de traumas com EMDR, ansiedade e desafios da vida internacional.
+          Tratamento de traumas com EMDR, ansiedade e desafios da vida internacional!
         </motion.p>
 
         {/* Authority badges */}
