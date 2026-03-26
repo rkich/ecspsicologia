@@ -25,6 +25,9 @@ const Index = () => {
         <p className="text-sm text-muted-foreground">
           © {new Date().getFullYear()} ECS Psicologia — Todos os direitos reservados
         </p>
+        <p className="text-xs text-muted-foreground mt-2">
+          Atendimento realizado por psicólogo registrado no Brasil (CRP 14399), em conformidade com as normas de atendimento para brasileiros no exterior.
+        </p>
       </footer>
       <WhatsAppButton />
     </>
