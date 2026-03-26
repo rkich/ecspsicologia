@@ -22,7 +22,7 @@ const Hero = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="heading-display mb-6"
         >
-          Atendimento Psicológico Premium para Brasileiros no Exterior
+          Atendimento Psicológico Premium para Brasileiros no Exterior (TESTE)
         </motion.h1>
 
         <motion.p
