@@ -116,7 +116,13 @@ const Sublocacao = () => {
             alt="Consultório da ECS Psicologia com sofá em couro preto e parede verde oliva"
             className="absolute inset-0 w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-[hsl(82_25%_18%)]/90 via-[hsl(82_25%_18%)]/70 to-[hsl(82_25%_18%)]/30" />
+          <div
+            className="absolute inset-0"
+            style={{
+              backgroundImage:
+                "linear-gradient(100deg, hsl(82 25% 14% / 0.94) 0%, hsl(82 25% 16% / 0.82) 45%, hsl(82 25% 18% / 0.45) 100%)",
+            }}
+          />
           <div className="relative z-10 container mx-auto px-6 py-24 md:px-12 lg:px-20 max-w-4xl">
             <motion.p
               initial={{ opacity: 0, y: 12 }}
