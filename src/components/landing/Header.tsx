@@ -20,9 +20,6 @@ const Header = () => {
           <a href="#como-funciona" className="text-sm text-muted-foreground hover:text-primary transition-colors">
             Como Funciona
           </a>
-          <Link to="/sublocacao" className="text-sm text-muted-foreground hover:text-primary transition-colors uppercase tracking-wide">
-            Sublocação
-          </Link>
           <Button variant="hero" size="sm" asChild>
             <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
               <MessageCircle className="w-4 h-4 mr-1" />
