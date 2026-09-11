@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+
 import { Button } from "@/components/ui/button";
 import { Menu, X, MessageCircle } from "lucide-react";
 
@@ -20,9 +20,6 @@ const Header = () => {
           <a href="#como-funciona" className="text-sm text-muted-foreground hover:text-primary transition-colors">
             Como Funciona
           </a>
-          <Link to="/sublocacao" className="text-sm text-muted-foreground hover:text-primary transition-colors uppercase tracking-wide">
-            Sublocação
-          </Link>
           <Button variant="hero" size="sm" asChild>
             <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
               <MessageCircle className="w-4 h-4 mr-1" />
@@ -51,13 +48,6 @@ const Header = () => {
           >
             Como Funciona
           </a>
-          <Link
-            to="/sublocacao"
-            className="block text-sm text-muted-foreground hover:text-primary uppercase tracking-wide"
-            onClick={() => setMobileOpen(false)}
-          >
-            Sublocação
-          </Link>
           <Button variant="hero" size="sm" asChild className="w-full">
             <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
               <MessageCircle className="w-4 h-4 mr-1" />

@@ -20,8 +20,8 @@ import {
   Hand,
   ArrowLeft,
 } from "lucide-react";
-import fotoSofa from "@/assets/consultorio-sofa.jpeg.asset.json";
-import fotoMesa from "@/assets/consultorio-mesa.jpeg.asset.json";
+import fotoSofa from "@/assets/consultorio-sofa.jpeg";
+import fotoMesa from "@/assets/consultorio-mesa.jpeg";
 
 const WA = "https://wa.me/5561993730704";
 const waLink = (msg: string) => `${WA}?text=${encodeURIComponent(msg)}`;
@@ -112,7 +112,7 @@ const Sublocacao = () => {
         {/* HERO */}
         <section className="relative min-h-[92vh] flex items-center">
           <img
-            src={fotoSofa.url}
+            src={fotoSofa}
             alt="Consultório da ECS Psicologia com sofá em couro preto e parede verde oliva"
             className="absolute inset-0 w-full h-full object-cover"
           />
@@ -196,7 +196,7 @@ const Sublocacao = () => {
               <div className="relative">
                 <div className="absolute -inset-3 border border-[hsl(82_18%_70%)] rounded-2xl -z-10 translate-x-3 translate-y-3" />
                 <img
-                  src={fotoMesa.url}
+                  src={fotoMesa}
                   alt="Mesa de atendimento em vidro e poltrona no consultório da ECS Psicologia"
                   loading="lazy"
                   className="w-full rounded-2xl object-cover aspect-[4/5] shadow-lg"
@@ -248,7 +248,7 @@ const Sublocacao = () => {
             <div className="grid lg:grid-cols-5 gap-6">
               <motion.div {...fade} className="lg:col-span-3">
                 <img
-                  src={fotoSofa.url}
+                  src={fotoSofa}
                   alt="Sala de espera da ECS com sofá em couro, quadros e aparador"
                   loading="lazy"
                   className="w-full h-full rounded-2xl object-cover aspect-[4/3] shadow-md"
@@ -260,7 +260,7 @@ const Sublocacao = () => {
                 className="lg:col-span-2 lg:mt-12"
               >
                 <img
-                  src={fotoMesa.url}
+                  src={fotoMesa}
                   alt="Consultório da ECS com mesa de vidro, poltrona e parede verde oliva"
                   loading="lazy"
                   className="w-full h-full rounded-2xl object-cover aspect-[4/3] lg:aspect-[3/4] shadow-md"
