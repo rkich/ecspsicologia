@@ -101,7 +101,7 @@ const DesafioFeminino = () => {
               initial={{ opacity: 0, y: 24 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.1 }}
-              className="font-heading text-3xl md:text-4xl lg:text-5xl font-semibold leading-tight text-text-heading mb-6"
+              className="heading-display mb-6"
             >
               Você aprendeu a dar conta de tudo. Mas quando foi a última vez que alguém perguntou como você está?
             </motion.h1>
@@ -299,7 +299,7 @@ const DesafioFeminino = () => {
               </motion.div>
 
               <motion.div {...fade} transition={{ duration: 0.7, delay: 0.2 }}>
-                <h3 className="font-heading text-2xl md:text-3xl font-semibold mb-2 text-text-heading">
+                <h3 className="font-heading text-2xl md:text-3xl font-semibold mb-2">
                   Edinaldo Castro
                 </h3>
                 <p className="text-muted-foreground mb-6">
