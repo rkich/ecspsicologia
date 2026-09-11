@@ -16,6 +16,7 @@ import {
   Hand,
 } from "lucide-react";
 import edinaldoPhoto from "@/assets/edinaldo-castro.png";
+import mulherReflexiva from "@/assets/mulher-reflexiva.jpg";
 
 const WA = "https://wa.me/5561993730704";
 const waLink = (msg: string) => `${WA}?text=${encodeURIComponent(msg)}`;
@@ -138,44 +139,59 @@ const DesafioFeminino = () => {
 
         {/* O CANSAÇO QUE NINGUÉM VÊ */}
         <section className="section-padding bg-background">
-          <div className="container mx-auto max-w-4xl">
-            <motion.div {...fade} className="text-center mb-14">
-              <Heart className="w-8 h-8 mx-auto mb-5 text-primary" strokeWidth={1.5} />
-              <h2 className="heading-section mb-6">O cansaço que ninguém vê</h2>
-              <p className="text-body-lg max-w-2xl mx-auto">
-                Nem todo esgotamento aparece como cansaço físico. Às vezes ele se disfarça de:
-              </p>
-            </motion.div>
+          <div className="container mx-auto max-w-6xl">
+            <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
+              <motion.div {...fade} className="order-2 md:order-1">
+                <Heart className="w-8 h-8 mb-5 text-primary" strokeWidth={1.5} />
+                <h2 className="heading-section mb-6">O cansaço que ninguém vê</h2>
+                <p className="text-body-lg mb-8">
+                  Nem todo esgotamento aparece como cansaço físico. Às vezes ele se disfarça de:
+                </p>
 
-            <motion.div
-              {...fade}
-              transition={{ duration: 0.6, delay: 0.1 }}
-              className="grid sm:grid-cols-2 gap-4 mb-10"
-            >
-              {[
-                "irritação por qualquer coisa",
-                "culpa sempre que você para",
-                "dificuldade de dizer não",
-                "a sensação de estar sozinha, mesmo cercada de gente",
-              ].map((item) => (
-                <div
-                  key={item}
-                  className="flex items-center gap-4 rounded-xl border border-border bg-card p-5"
-                >
-                  <span className="w-2 h-2 rounded-full bg-primary shrink-0" />
-                  <span className="text-body-lg">{item}</span>
+                <div className="grid sm:grid-cols-2 gap-4 mb-8">
+                  {[
+                    "irritação por qualquer coisa",
+                    "culpa sempre que você para",
+                    "dificuldade de dizer não",
+                    "a sensação de estar sozinha, mesmo cercada de gente",
+                  ].map((item) => (
+                    <div
+                      key={item}
+                      className="flex items-center gap-4 rounded-xl border border-border bg-card p-5"
+                    >
+                      <span className="w-2 h-2 rounded-full bg-primary shrink-0" />
+                      <span className="text-body-lg">{item}</span>
+                    </div>
+                  ))}
                 </div>
-              ))}
-            </motion.div>
 
-            <motion.div {...fade} transition={{ duration: 0.6, delay: 0.2 }} className="space-y-5 text-body-lg text-center max-w-3xl mx-auto">
-              <p>
-                Talvez não seja fraqueza. Talvez seja o preço de sustentar tudo sozinha, por tempo demais.
-              </p>
-              <p className="font-medium text-sage-dark">
-                É possível entender a origem desse cansaço e, com acompanhamento psicológico adequado, transformar esses sinais em pontos de mudança — não em rotina.
-              </p>
-            </motion.div>
+                <div className="space-y-5 text-body-lg">
+                  <p>
+                    Talvez não seja fraqueza. Talvez seja o preço de sustentar tudo sozinha, por tempo demais.
+                  </p>
+                  <p className="font-medium text-sage-dark">
+                    É possível entender a origem desse cansaço e, com acompanhamento psicológico adequado, transformar esses sinais em pontos de mudança — não em rotina.
+                  </p>
+                </div>
+              </motion.div>
+
+              <motion.div
+                {...fade}
+                transition={{ duration: 0.7, delay: 0.15 }}
+                className="order-1 md:order-2"
+              >
+                <div className="rounded-2xl overflow-hidden shadow-lg bg-muted aspect-[4/5]">
+                  <img
+                    src={mulherReflexiva}
+                    alt="Mulher em momento de reflexão e autocuidado"
+                    className="w-full h-full object-cover"
+                    width={1024}
+                    height={1024}
+                    loading="lazy"
+                  />
+                </div>
+              </motion.div>
+            </div>
           </div>
         </section>
 
