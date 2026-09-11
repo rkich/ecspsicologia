@@ -48,13 +48,6 @@ const Header = () => {
           >
             Como Funciona
           </a>
-          <Link
-            to="/sublocacao"
-            className="block text-sm text-muted-foreground hover:text-primary uppercase tracking-wide"
-            onClick={() => setMobileOpen(false)}
-          >
-            Sublocação
-          </Link>
           <Button variant="hero" size="sm" asChild className="w-full">
             <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
               <MessageCircle className="w-4 h-4 mr-1" />
