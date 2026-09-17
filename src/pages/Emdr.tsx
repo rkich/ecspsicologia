@@ -15,8 +15,8 @@ import {
   Unlink,
   Waves,
 } from "lucide-react";
-import heroAsset from "@/assets/emdr-reprocessar-experiencias.jpeg.asset.json";
-import methodAsset from "@/assets/emdr-processar-viver-melhor.jpeg.asset.json";
+import heroPhoto from "@/assets/emdr-reprocessar-experiencias.jpeg";
+import methodPhoto from "@/assets/emdr-processar-viver-melhor.jpeg";
 import edinaldoPhoto from "@/assets/edinaldo-castro.png";
 
 const WA = "https://wa.me/5561993730704";
@@ -116,12 +116,12 @@ const Emdr = () => {
       <main className="pt-16">
         <section className="relative min-h-[calc(100vh-4rem)] overflow-hidden">
           <img
-            src={heroAsset.url}
+            src={heroPhoto}
             alt="Edinaldo Castro conduzindo uma sessão de EMDR"
             className="absolute inset-0 h-full w-full object-cover object-center md:object-[center_42%]"
             width={841}
             height={768}
-            fetchPriority="high"
+            loading="eager"
           />
           <div className="absolute inset-0 bg-background/70 md:bg-background/55" />
           <div className="relative z-10 flex min-h-[calc(100vh-4rem)] items-end">
@@ -210,7 +210,7 @@ const Emdr = () => {
               <motion.div {...fade} transition={{ duration: 0.7, delay: 0.12 }} className="order-1 md:order-2">
                 <div className="aspect-[4/5] overflow-hidden rounded-lg bg-muted shadow-lg">
                   <img
-                    src={methodAsset.url}
+                    src={methodPhoto}
                     alt="Edinaldo Castro durante atendimento com estimulação bilateral para EMDR"
                     className="h-full w-full object-cover"
                     width={841}
