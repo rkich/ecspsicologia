@@ -17,8 +17,8 @@ import {
 } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
-import readingCorner from "@/assets/ecs-cantinho-leitura.jpeg.asset.json";
-import clinicRoom from "@/assets/ecs-sala-estar.jpeg.asset.json";
+import readingCorner from "@/assets/ecs-cantinho-leitura.jpeg";
+import clinicRoom from "@/assets/ecs-sala-estar.jpeg";
 import edinaldoPhoto from "@/assets/edinaldo-castro.png";
 
 const WHATSAPP_URL =
@@ -117,7 +117,7 @@ const InstitutionalHome = () => {
     <>
       <section className="relative min-h-[92vh] flex items-end overflow-hidden pt-24">
         <img
-          src={readingCorner.url}
+          src={readingCorner}
           alt="Cantinho de leitura da ECS Psicologia com poltrona bege e manta verde oliva"
           className="absolute inset-0 h-full w-full object-cover object-center"
           fetchPriority="high"
@@ -156,7 +156,7 @@ const InstitutionalHome = () => {
         <div className="container mx-auto grid max-w-6xl items-center gap-12 md:grid-cols-2 lg:gap-20">
           <Reveal>
             <img
-              src={clinicRoom.url}
+              src={clinicRoom}
               alt="Sala de estar da ECS Psicologia com sofá de couro e quadros de araras"
               className="aspect-[4/5] w-full rounded-lg object-cover shadow-lg md:aspect-[5/6]"
               loading="lazy"
