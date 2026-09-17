@@ -8,6 +8,7 @@ import Sublocacao from "./pages/Sublocacao";
 import DesafioFeminino from "./pages/DesafioFeminino";
 import Emdr from "./pages/Emdr";
 import AvaliacaoPsicologica from "./pages/AvaliacaoPsicologica";
+import ComunidadeLGBT from "./pages/ComunidadeLGBT";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -25,6 +26,7 @@ const App = () => (
           <Route path="/desenvolvimento-feminino" element={<DesafioFeminino />} />
           <Route path="/emdr" element={<Emdr />} />
           <Route path="/avaliacao-psicologica" element={<AvaliacaoPsicologica />} />
+          <Route path="/comunidade-lgbt" element={<ComunidadeLGBT />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
