@@ -8,6 +8,7 @@ import Sublocacao from "./pages/Sublocacao";
 import DesafioFeminino from "./pages/DesafioFeminino";
 import Emdr from "./pages/Emdr";
 import AvaliacaoPsicologica from "./pages/AvaliacaoPsicologica";
+import ComunidadeLGBT from "./pages/ComunidadeLGBT";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
