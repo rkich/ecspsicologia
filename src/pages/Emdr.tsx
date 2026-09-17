@@ -131,9 +131,9 @@ const Emdr = () => {
                   initial={{ opacity: 0, y: 12 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6 }}
-                  className="mb-5 text-xs uppercase tracking-[0.25em] text-olive md:text-sm"
+                  className="mb-5 text-sm font-bold uppercase tracking-[0.2em] text-primary md:text-base lg:text-lg"
                 >
-                  Terapia EMDR
+                  Especialista em terapia EMDR — Tratamento de traumas
                 </motion.p>
                 <motion.h1
                   initial={{ opacity: 0, y: 24 }}
