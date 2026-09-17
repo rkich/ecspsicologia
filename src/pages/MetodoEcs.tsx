@@ -116,7 +116,7 @@ const MetodoEcs = () => {
               transition={{ duration: 0.8 }}
               className="order-2 md:order-1"
             >
-              <p className="mb-5 text-sm font-bold uppercase text-primary">
+              <p className="mb-5 max-w-[calc(100%-4rem)] text-sm font-bold uppercase text-primary md:max-w-none">
                 Método ECS para Restauração de Relacionamentos
               </p>
               <h1 className="heading-display mb-6">
