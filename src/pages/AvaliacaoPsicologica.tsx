@@ -7,7 +7,6 @@ import {
   BadgeCheck,
   Brain,
   BriefcaseBusiness,
-  CarFront,
   ClipboardCheck,
   FileCheck2,
   HeartHandshake,
