@@ -16,8 +16,8 @@ import {
 } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
-import heroAsset from "@/assets/metodo-ecs-atendimento-casal.jpeg.asset.json";
-import edinaldoAsset from "@/assets/metodo-ecs-edinaldo.png.asset.json";
+import heroPhoto from "@/assets/metodo-ecs-atendimento-casal.jpeg";
+import edinaldoPhoto from "@/assets/metodo-ecs-edinaldo.png";
 
 const WA = "https://wa.me/5561993730704";
 const INITIAL_MESSAGE =
@@ -138,7 +138,7 @@ const MetodoEcs = () => {
             >
               <div className="aspect-[4/5] overflow-hidden rounded-lg bg-muted shadow-lg md:aspect-[3/4]">
                 <img
-                  src={heroAsset.url}
+                  src={heroPhoto}
                   alt="Edinaldo Castro em atendimento de casal na ECS Psicologia"
                   className="h-full w-full object-cover object-center"
                   width={922}
@@ -309,7 +309,7 @@ const MetodoEcs = () => {
               <motion.div {...fade} className="flex justify-center">
                 <div className="aspect-square w-full max-w-sm overflow-hidden rounded-lg bg-muted shadow-lg">
                   <img
-                    src={edinaldoAsset.url}
+                    src={edinaldoPhoto}
                     alt="Edinaldo Castro, psicólogo clínico e criador do Método ECS"
                     className="h-full w-full object-cover object-top"
                     width={768}
