@@ -39,6 +39,12 @@ const Header = () => {
           >
             Avaliação Psicológica
           </Link>
+          <Link
+            to="/brasileiros-no-exterior"
+            className="text-sm text-muted-foreground hover:text-primary transition-colors"
+          >
+            Brasileiros no Exterior
+          </Link>
           <Button variant="hero" size="sm" asChild>
             <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
               <MessageCircle className="w-4 h-4 mr-1" />
@@ -87,6 +93,13 @@ const Header = () => {
             onClick={() => setMobileOpen(false)}
           >
             Avaliação Psicológica
+          </Link>
+          <Link
+            to="/brasileiros-no-exterior"
+            className="block text-sm text-muted-foreground hover:text-primary"
+            onClick={() => setMobileOpen(false)}
+          >
+            Brasileiros no Exterior
           </Link>
           <Button variant="hero" size="sm" asChild className="w-full">
             <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
