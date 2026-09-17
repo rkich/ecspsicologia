@@ -6,6 +6,9 @@
 - [x] Criar a página Avaliação Psicológica com as sete seções e imagens enviadas
 - [x] Adicionar a rota /avaliacao-psicologica e o item ao menu
 - [x] Verificar a nova página em computador e celular, links e integridade do site
+- [x] Criar a página Método ECS para Restauração de Relacionamentos com os oito blocos e imagens enviadas
+- [x] Adicionar a rota /metodo-ecs e o item Método ECS ao menu
+- [x] Verificar a nova página em computador e celular, âncora, links e integridade do site
 - [x] Substituir a Home por conteúdo institucional sem alterar as páginas internas
 - [x] Adicionar as fotos da clínica e a grade de oito especialidades
 - [x] Verificar a nova Home em computador e celular, links e integridade do site

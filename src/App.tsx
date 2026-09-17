@@ -10,6 +10,7 @@ import Emdr from "./pages/Emdr";
 import AvaliacaoPsicologica from "./pages/AvaliacaoPsicologica";
 import ComunidadeLGBT from "./pages/ComunidadeLGBT";
 import BrasileirosNoExterior from "./pages/BrasileirosNoExterior";
+import MetodoEcs from "./pages/MetodoEcs";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -29,6 +30,7 @@ const App = () => (
           <Route path="/avaliacao-psicologica" element={<AvaliacaoPsicologica />} />
           <Route path="/comunidade-lgbt" element={<ComunidadeLGBT />} />
           <Route path="/brasileiros-no-exterior" element={<BrasileirosNoExterior />} />
+          <Route path="/metodo-ecs" element={<MetodoEcs />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
