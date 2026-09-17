@@ -27,6 +27,12 @@ const Header = () => {
           >
             Desafio Feminino
           </Link>
+          <Link
+            to="/emdr"
+            className="text-sm text-muted-foreground hover:text-primary transition-colors"
+          >
+            EMDR
+          </Link>
           <Button variant="hero" size="sm" asChild>
             <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
               <MessageCircle className="w-4 h-4 mr-1" />
@@ -61,6 +67,13 @@ const Header = () => {
             onClick={() => setMobileOpen(false)}
           >
             Desafio Feminino
+          </Link>
+          <Link
+            to="/emdr"
+            className="block text-sm text-muted-foreground hover:text-primary"
+            onClick={() => setMobileOpen(false)}
+          >
+            EMDR
           </Link>
           <Button variant="hero" size="sm" asChild className="w-full">
             <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
