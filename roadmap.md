@@ -8,7 +8,7 @@
 - [x] Verificar a nova página em computador e celular, links e integridade do site
 - [x] Substituir a Home por conteúdo institucional sem alterar as páginas internas
 - [x] Adicionar as fotos da clínica e a grade de oito especialidades
-- [ ] Verificar a nova Home em computador e celular, links e integridade do site
+- [x] Verificar a nova Home em computador e celular, links e integridade do site
 - [x] Criar a página Histórias de Luta, Histórias de Vitória (comunidade LGBT) com as cinco seções e imagens enviadas
 - [x] Adicionar a rota /comunidade-lgbt sem incluir no menu de navegação
 - [x] Verificar a nova página em computador e celular, links e integridade do site
