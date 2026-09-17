@@ -17,7 +17,7 @@ const Header = () => {
         </a>
 
         {/* Desktop nav */}
-        <nav className="hidden md:flex items-center gap-5 lg:gap-8">
+        <nav className="hidden md:flex items-center gap-4 lg:gap-6">
           <a href="#como-funciona" className="text-sm text-muted-foreground hover:text-primary transition-colors">
             Como Funciona
           </a>
@@ -44,6 +44,12 @@ const Header = () => {
             className="text-sm text-muted-foreground hover:text-primary transition-colors"
           >
             Brasileiros no Exterior
+          </Link>
+          <Link
+            to="/metodo-ecs"
+            className="text-sm text-muted-foreground hover:text-primary transition-colors"
+          >
+            Método ECS
           </Link>
           <Button variant="hero" size="sm" asChild>
             <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
@@ -100,6 +106,13 @@ const Header = () => {
             onClick={() => setMobileOpen(false)}
           >
             Brasileiros no Exterior
+          </Link>
+          <Link
+            to="/metodo-ecs"
+            className="block text-sm text-muted-foreground hover:text-primary"
+            onClick={() => setMobileOpen(false)}
+          >
+            Método ECS
           </Link>
           <Button variant="hero" size="sm" asChild className="w-full">
             <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
