@@ -136,13 +136,13 @@ const MetodoEcs = () => {
               transition={{ duration: 0.8, delay: 0.1 }}
               className="order-1 md:order-2"
             >
-              <div className="aspect-[4/5] overflow-hidden rounded-lg bg-muted shadow-lg md:aspect-[3/4]">
+              <div className="aspect-[6/5] overflow-hidden rounded-lg bg-muted shadow-lg">
                 <img
                   src={heroPhoto}
                   alt="Edinaldo Castro em atendimento de casal na ECS Psicologia"
-                  className="h-full w-full object-cover object-center"
-                  width={922}
-                  height={768}
+                  className="h-full w-full object-contain object-center"
+                  width={1374}
+                  height={1145}
                   loading="eager"
                 />
               </div>
