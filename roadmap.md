@@ -11,4 +11,4 @@
 - [x] Verificar a nova página em computador e celular, links e integridade do site
 - [x] Criar a página Brasileiros no Exterior com as sete seções e imagem enviada
 - [x] Adicionar a rota /brasileiros-no-exterior e o item ao menu
-- [ ] Verificar a nova página em computador e celular, links e integridade do site
+- [x] Verificar a nova página em computador e celular, links e integridade do site
