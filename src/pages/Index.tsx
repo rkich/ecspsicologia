@@ -1,11 +1,5 @@
 import Header from "@/components/landing/Header";
-import Hero from "@/components/landing/Hero";
-import Authority from "@/components/landing/Authority";
-import PainPoints from "@/components/landing/PainPoints";
-import Solution from "@/components/landing/Solution";
-import About from "@/components/landing/About";
-import HowItWorks from "@/components/landing/HowItWorks";
-import FinalCTA from "@/components/landing/FinalCTA";
+import InstitutionalHome from "@/components/landing/InstitutionalHome";
 import WhatsAppButton from "@/components/landing/WhatsAppButton";
 
 const Index = () => {
@@ -13,13 +7,7 @@ const Index = () => {
     <>
       <Header />
       <main>
-        <Hero />
-        <Authority />
-        <PainPoints />
-        <Solution />
-        <About />
-        <HowItWorks />
-        <FinalCTA />
+        <InstitutionalHome />
       </main>
       <footer className="bg-background border-t border-border py-8 px-6 text-center">
         <p className="text-sm text-muted-foreground">
