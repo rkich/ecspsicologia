@@ -89,7 +89,7 @@ const processSteps = [
   {
     title: "Emissão do laudo ou parecer",
     description:
-      "Documento oficial, entregue dentro do prazo necessário para o seu processo.",
+      "Sua avaliação neuropsicológica é psicotécnica, entregue dentro do prazo necessário para o seu processo.",
   },
 ];
 
@@ -160,7 +160,7 @@ const AvaliacaoPsicologica = () => {
                 Escuta, análise e compreensão
               </p>
               <h1 className="heading-display mb-5">
-                Avaliação Psicológica: muito mais do que uma exigência
+                Avaliação Psicológica: sua avaliação neuropsicológica e psicotécnica é muito mais do que apenas uma exigência
               </h1>
               <p className="mb-7 font-heading text-lg font-semibold leading-relaxed text-olive md:text-xl">
                 O melhor momento para se fazer uma avaliação psicológica, ou seja, se conhecer, é o momento em que você decide crescer!
