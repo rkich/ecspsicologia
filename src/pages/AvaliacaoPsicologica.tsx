@@ -4,10 +4,12 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import {
   ArrowLeft,
+  Baby,
   BadgeCheck,
   Brain,
   BriefcaseBusiness,
   ClipboardCheck,
+  Compass,
   FileCheck2,
   HeartHandshake,
   Instagram,
@@ -41,11 +43,32 @@ const audiences = [
       "Avaliação psicológica e preparação para avaliação psicológica de concurso como etapa eliminatória em concursos públicos e processos seletivos, incluindo forças de segurança, carreiras militares e cargos que exigem perfil psicológico específico.",
   },
   {
+    icon: Baby,
+    title: "Crianças e Adolescentes",
+    description:
+      "Ajuda a identificar potencialidades, dificuldades e necessidades de apoio, contribuindo para o desenvolvimento em casa, na escola e na vida. Principais pontos analisados: desenvolvimento cognitivo, aspectos emocionais, comportamentos e orientação escolar.",
+  },
+  {
+    icon: Compass,
+    title: "Desenvolvimento de Carreira",
+    description:
+      "Ajuda você a conhecer suas características, habilidades e estilo de funcionamento, contribuindo para decisões profissionais mais conscientes e uma trajetória mais alinhada com seus valores. Principais pontos analisados: escolha profissional adequada ao seu perfil, seu estilo de liderança e gestão, seus recursos para melhor desempenho no trabalho, auxílio para decisões mais seguras na transição de carreira e construção de uma carreira com propósito e satisfação.",
+  },
+  {
     icon: Scale,
     title: "Outras Finalidades",
     description:
       "Avaliações para processos de adoção, perícias judiciais, diagnósticos específicos e demais situações em que um laudo ou parecer psicológico técnico seja exigido.",
   },
+];
+
+const whenToEvaluate = [
+  "Mudanças persistentes no comportamento ou no humor",
+  "Dificuldades de aprendizado, atenção ou concentração",
+  "Momentos de transição (mudança de país, emprego ou fase da vida)",
+  "Ansiedade, medos ou tristeza que interferem no dia a dia",
+  "Conflitos familiares, conjugais ou sociais recorrentes",
+  "Busca por autoconhecimento e crescimento pessoal",
 ];
 
 const processSteps = [
