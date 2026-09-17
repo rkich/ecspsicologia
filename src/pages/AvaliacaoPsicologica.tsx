@@ -7,7 +7,6 @@ import {
   BadgeCheck,
   Brain,
   BriefcaseBusiness,
-  CarFront,
   ClipboardCheck,
   FileCheck2,
   HeartHandshake,
@@ -36,22 +35,10 @@ const fade = {
 
 const audiences = [
   {
-    icon: CarFront,
-    title: "Trânsito (CNH)",
-    description:
-      "Avaliação psicológica exigida pelo DETRAN para primeira habilitação, renovação de CNH e mudança ou adição de categoria. Processo objetivo, dentro dos prazos e critérios oficiais.",
-  },
-  {
-    icon: ShieldCheck,
-    title: "Porte de Arma de Fogo",
-    description:
-      "Avaliação psicológica exigida pela Polícia Federal para posse e porte de arma de fogo, tanto para civis quanto para categorias profissionais que exigem o laudo, como seguranças, atiradores, colecionadores e caçadores.",
-  },
-  {
     icon: BriefcaseBusiness,
     title: "Concursos Públicos e Processos Seletivos",
     description:
-      "Avaliação psicológica como etapa eliminatória em concursos públicos e processos seletivos, incluindo forças de segurança, carreiras militares e cargos que exigem perfil psicológico específico.",
+      "Avaliação psicológica e preparação para avaliação psicológica de concurso como etapa eliminatória em concursos públicos e processos seletivos, incluindo forças de segurança, carreiras militares e cargos que exigem perfil psicológico específico.",
   },
   {
     icon: Scale,
