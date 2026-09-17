@@ -116,7 +116,7 @@ const AvaliacaoPsicologica = () => {
   useEffect(() => {
     const title = "Avaliação Psicológica em Brasília | ECS Psicologia";
     const description =
-      "Avaliação psicológica para CNH, porte de arma, concursos, perícias e outras finalidades com Edinaldo Castro, psicólogo com mais de 20 anos de experiência.";
+      "Avaliação psicológica para concursos, perícias, crianças, adolescentes, desenvolvimento de carreira e outras finalidades com Edinaldo Castro, psicólogo com mais de 20 anos de experiência.";
     const previousTitle = document.title;
     const meta = document.querySelector<HTMLMetaElement>('meta[name="description"]');
     const previousDescription = meta?.content ?? "";
@@ -159,9 +159,12 @@ const AvaliacaoPsicologica = () => {
               <p className="mb-5 text-xs uppercase tracking-[0.25em] text-olive md:text-sm">
                 Escuta, análise e compreensão
               </p>
-              <h1 className="heading-display mb-7">
+              <h1 className="heading-display mb-5">
                 Avaliação Psicológica: muito mais do que uma exigência
               </h1>
+              <p className="mb-7 font-heading text-lg font-semibold leading-relaxed text-olive md:text-xl">
+                O melhor momento para se fazer uma avaliação psicológica, ou seja, se conhecer, é o momento em que você decide crescer!
+              </p>
               <div className="space-y-5 text-body-lg">
                 <p>
                   Muita gente pensa que a avaliação psicológica só serve para quem está “abalado” ou com o psicológico afetado. Mas ela também funciona como um verdadeiro mapa de autoconhecimento.
