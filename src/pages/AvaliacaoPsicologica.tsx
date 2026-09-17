@@ -4,10 +4,12 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import {
   ArrowLeft,
+  Baby,
   BadgeCheck,
   Brain,
   BriefcaseBusiness,
   ClipboardCheck,
+  Compass,
   FileCheck2,
   HeartHandshake,
   Instagram,
@@ -41,11 +43,32 @@ const audiences = [
       "Avaliação psicológica e preparação para avaliação psicológica de concurso como etapa eliminatória em concursos públicos e processos seletivos, incluindo forças de segurança, carreiras militares e cargos que exigem perfil psicológico específico.",
   },
   {
+    icon: Baby,
+    title: "Crianças e Adolescentes",
+    description:
+      "Ajuda a identificar potencialidades, dificuldades e necessidades de apoio, contribuindo para o desenvolvimento em casa, na escola e na vida. Principais pontos analisados: desenvolvimento cognitivo, aspectos emocionais, comportamentos e orientação escolar.",
+  },
+  {
+    icon: Compass,
+    title: "Desenvolvimento de Carreira",
+    description:
+      "Ajuda você a conhecer suas características, habilidades e estilo de funcionamento, contribuindo para decisões profissionais mais conscientes e uma trajetória mais alinhada com seus valores. Principais pontos analisados: escolha profissional adequada ao seu perfil, seu estilo de liderança e gestão, seus recursos para melhor desempenho no trabalho, auxílio para decisões mais seguras na transição de carreira e construção de uma carreira com propósito e satisfação.",
+  },
+  {
     icon: Scale,
     title: "Outras Finalidades",
     description:
       "Avaliações para processos de adoção, perícias judiciais, diagnósticos específicos e demais situações em que um laudo ou parecer psicológico técnico seja exigido.",
   },
+];
+
+const whenToEvaluate = [
+  "Mudanças persistentes no comportamento ou no humor",
+  "Dificuldades de aprendizado, atenção ou concentração",
+  "Momentos de transição (mudança de país, emprego ou fase da vida)",
+  "Ansiedade, medos ou tristeza que interferem no dia a dia",
+  "Conflitos familiares, conjugais ou sociais recorrentes",
+  "Busca por autoconhecimento e crescimento pessoal",
 ];
 
 const processSteps = [
@@ -93,7 +116,7 @@ const AvaliacaoPsicologica = () => {
   useEffect(() => {
     const title = "Avaliação Psicológica em Brasília | ECS Psicologia";
     const description =
-      "Avaliação psicológica para CNH, porte de arma, concursos, perícias e outras finalidades com Edinaldo Castro, psicólogo com mais de 20 anos de experiência.";
+      "Avaliação psicológica para concursos, perícias, crianças, adolescentes, desenvolvimento de carreira e outras finalidades com Edinaldo Castro, psicólogo com mais de 20 anos de experiência.";
     const previousTitle = document.title;
     const meta = document.querySelector<HTMLMetaElement>('meta[name="description"]');
     const previousDescription = meta?.content ?? "";
@@ -136,9 +159,12 @@ const AvaliacaoPsicologica = () => {
               <p className="mb-5 text-xs uppercase tracking-[0.25em] text-olive md:text-sm">
                 Escuta, análise e compreensão
               </p>
-              <h1 className="heading-display mb-7">
+              <h1 className="heading-display mb-5">
                 Avaliação Psicológica: muito mais do que uma exigência
               </h1>
+              <p className="mb-7 font-heading text-lg font-semibold leading-relaxed text-olive md:text-xl">
+                O melhor momento para se fazer uma avaliação psicológica, ou seja, se conhecer, é o momento em que você decide crescer!
+              </p>
               <div className="space-y-5 text-body-lg">
                 <p>
                   Muita gente pensa que a avaliação psicológica só serve para quem está “abalado” ou com o psicológico afetado. Mas ela também funciona como um verdadeiro mapa de autoconhecimento.
@@ -222,6 +248,30 @@ const AvaliacaoPsicologica = () => {
                 loading="lazy"
               />
             </motion.div>
+          </div>
+        </section>
+
+        <section className="section-padding bg-sage-light">
+          <div className="container mx-auto max-w-5xl">
+            <motion.div {...fade} className="mx-auto mb-12 max-w-3xl text-center">
+              <ClipboardCheck className="mx-auto mb-5 h-8 w-8 text-primary" strokeWidth={1.5} />
+              <h2 className="heading-section">Quando devo fazer avaliação psicológica?</h2>
+            </motion.div>
+            <div className="grid gap-5 md:grid-cols-2">
+              {whenToEvaluate.map((item, index) => (
+                <motion.div
+                  key={item}
+                  {...fade}
+                  transition={{ duration: 0.55, delay: index * 0.06 }}
+                  className="flex items-start gap-4 rounded-lg border border-border bg-card p-5 shadow-sm"
+                >
+                  <span className="mt-1 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-primary text-xs font-semibold text-primary-foreground">
+                    {index + 1}
+                  </span>
+                  <p className="leading-relaxed text-muted-foreground">{item}</p>
+                </motion.div>
+              ))}
+            </div>
           </div>
         </section>
 
