@@ -251,6 +251,30 @@ const AvaliacaoPsicologica = () => {
           </div>
         </section>
 
+        <section className="section-padding bg-sage-light">
+          <div className="container mx-auto max-w-5xl">
+            <motion.div {...fade} className="mx-auto mb-12 max-w-3xl text-center">
+              <ClipboardCheck className="mx-auto mb-5 h-8 w-8 text-primary" strokeWidth={1.5} />
+              <h2 className="heading-section">Quando devo fazer avaliação psicológica?</h2>
+            </motion.div>
+            <div className="grid gap-5 md:grid-cols-2">
+              {whenToEvaluate.map((item, index) => (
+                <motion.div
+                  key={item}
+                  {...fade}
+                  transition={{ duration: 0.55, delay: index * 0.06 }}
+                  className="flex items-start gap-4 rounded-lg border border-border bg-card p-5 shadow-sm"
+                >
+                  <span className="mt-1 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-primary text-xs font-semibold text-primary-foreground">
+                    {index + 1}
+                  </span>
+                  <p className="leading-relaxed text-muted-foreground">{item}</p>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </section>
+
         <section className="section-padding bg-background">
           <div className="container mx-auto max-w-6xl">
             <div className="grid items-center gap-12 md:grid-cols-2 lg:gap-16">
